@@ -33,7 +33,7 @@ const createDate = () => {
             break;
     }
 
-    const fullDate = `${monthName} ${dateObject.getDate()}, ${dateObject.getFullYear()} - ${hours > 12 ? 'PM ' + (hours - 12) : 'AM ' + hours}:${minutes < 10 ? '0' + minutes : minutes}`
+    const fullDate = `${monthName} ${dateObject.getDate()}, ${dateObject.getFullYear()} - ${hours > 12 ? 'PM ' + (hours - 12) : 'AM 0' + hours}:${minutes < 10 ? '0' + minutes : minutes}`
 
     return fullDate
 }
