@@ -1,8 +1,23 @@
-import React from 'react'
+// import React from 'react'
+import { CiSearch } from 'react-icons/ci'
+import { Link } from 'react-router-dom'
+import { BsPlusLg } from 'react-icons/bs'
 
-const Notes = () => {
+import NoteItem from '../components/NoteItem'
+
+const Notes = ({ notes }) => {
     return (
-        <div>Notes</div>
+        <section>
+            <header className="notes__header">
+                <h2>Notes</h2>
+                {/* <input type="text" name="" id="" autoFocus placeholder='Search' /> */}
+                <button className='btn'><CiSearch /></button>
+            </header>
+            <div className="notes__container">
+                {notes.map(note => <NoteItem key={note.id} note={note} />)}
+            </div>
+            <Link className='btn add__btn'><BsPlusLg /></Link>
+        </section>
     )
 }
 
