@@ -11,11 +11,11 @@
 }
 
 :root {
-    --color-bg-dark: #3a3a3a;
-    --color-bg-black: #111111;
+    --color-bg-dark: #303030;
+    --color-bg-black: #161616;
     --color-white: #fefefe;
-    --color-primary: #7634d8;
-    --color-danger: rgb(249, 84, 84);
+    --color-primary: #492cf1;
+    --color-danger: #ff3b3b;
 }
 
 body {
@@ -165,10 +165,6 @@ h2 {
     padding: 1rem 1rem 0.5rem;
 }
 
-
-
-
-
 /* CREATE NOTE & EDIT NOTE PAGE */
 .create-note__header {
     display: flex;
@@ -207,13 +203,9 @@ h2 {
         padding: 2rem 1rem;
     }
 
-    /* section {
-        width: 100vw;
-    } */
-
     .notes__header {
         width: 100%;
-        padding: 1rem 1rem;
+        padding: 1rem 2rem;
         position: fixed;
         top: 0;
         left: 0;
