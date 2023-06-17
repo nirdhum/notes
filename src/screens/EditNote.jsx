@@ -29,7 +29,7 @@ const EditNote = ({ notes, setNotes }) => {
 
             setNotes(updatedNotes)
         }
-        navigate('/')
+        navigate('/notes')
     }
 
     const deleteNote = () => {
@@ -38,14 +38,14 @@ const EditNote = ({ notes, setNotes }) => {
 
             setNotes(newNotes)
 
-            navigate('/')
+            navigate('/notes')
         }
     }
 
     return (
         <section>
             <header className='create-note__header'>
-                <Link to='/' className='btn'><IoIosArrowBack /></Link>
+                <Link to='/notes' className='btn'><IoIosArrowBack /></Link>
                 <button className="btn lg primary" onClick={handleChange}>Save</button>
                 <button className="btn danger" onClick={deleteNote} ><MdOutlineDeleteOutline /></button>
             </header>

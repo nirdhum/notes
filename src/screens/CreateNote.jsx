@@ -20,7 +20,7 @@ const CreateNote = ({ setNotes }) => {
 
             setNotes(prevNotes => [note, ...prevNotes])
 
-            navigate('/')
+            navigate('/notes')
         }
 
     }
@@ -28,7 +28,7 @@ const CreateNote = ({ setNotes }) => {
     return (
         <section>
             <header className='create-note__header'>
-                <Link to='/' className='btn'><IoIosArrowBack /></Link>
+                <Link to='/notes' className='btn'><IoIosArrowBack /></Link>
                 <button className="btn lg primary" onClick={handleSubmit}>Save</button>
             </header>
             <form className="create-note__form" onSubmit={handleSubmit}>
