@@ -26,6 +26,7 @@ const Notes = ({ notes }) => {
     return (
         <section>
             <header className="notes__header">
+                {/* {!showSearch && <h2>Notes</h2>} */}
                 <h2>Notes</h2>
 
                 {showSearch && <input type="text" value={text}
@@ -35,6 +36,7 @@ const Notes = ({ notes }) => {
                             handleSearch()
                         }
                     } autoFocus placeholder='Search' />
+
                 }
 
                 <button className='btn' onClick={() => setShowSearch(prevState => !prevState)}>{showSearch ? <IoMdClose /> : <CiSearch />}</button>

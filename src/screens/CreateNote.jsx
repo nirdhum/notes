@@ -32,7 +32,7 @@ const CreateNote = ({ setNotes }) => {
                 <button className="btn lg primary" onClick={handleSubmit}>Save</button>
             </header>
             <form className="create-note__form" onSubmit={handleSubmit}>
-                <input type="text" name="" id="" placeholder='Title for your new Note' value={title} onChange={(e) => setTitle(e.target.value)} autoFocus />
+                <input type="text" name="" id="" placeholder='Note title' value={title} onChange={(e) => setTitle(e.target.value)} autoFocus />
                 <textarea rows="30" placeholder='Write your Note here...' value={details} onChange={(e) => setDetails(e.target.value)}></textarea>
             </form>
         </section>
