@@ -13,7 +13,8 @@ A simple yet efficient **Notes Application** built with **React** and **Vite**. 
 
 ## 🖼️ Demo
 
-[Live Preview](https://nirdhum.github.io/git-profiles/)
+- Will be available soon
+<!-- [Live Preview](https://nirdhum.github.io/git-profiles/) -->
 
 ## 📦 Tech Stack
 
